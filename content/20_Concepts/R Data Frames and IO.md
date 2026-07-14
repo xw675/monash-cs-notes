@@ -1,0 +1,52 @@
+---
+unit: FIT1043
+parent: "[[R Vectors]]"
+tags: [DataScience/Tools, R/Wrangling, Monash/CS_DS]
+type: pattern
+aliases: [R Data Frame, data.frame, read.csv, aggregate, R wrangling, R Data Frames and I/O]
+---
+# [[R Data Frames and IO]]
+
+**Context:** [[FIT1043_MOC]] · R's table = bound [[R Vectors|vectors]] · the [[Data Wrangling|wrangling]]/exploration workhorse · R's answer to a [[Data Auditing in Pandas|pandas DataFrame]]
+**Task signature:** build/read a data frame, audit it, extract/sort/merge/aggregate rows and columns, and write it back.
+
+> [!abstract] Quick Revision
+> - **🎯 Trigger:** tabular data in R ➔ data.frame(); audit with str/summary; slice with [row, col] and the $ operator.
+> - **⚡ Critical Bottleneck:** `df[i]` selects a **column**; a **row** needs the trailing comma `df[i, ]` — the comma placement changes everything.
+
+## 🔧 Minimal Working Example
+```r
+names <- c("Bill","Ted","Henry","Joan"); ages <- c(76,82,104,78)
+myTable <- data.frame(names, ages)
+names(myTable) <- c("Names","Ages")   # rename columns
+dim(myTable)      # [1] 4 2   (nrow=4, ncol=2)
+str(myTable)      # column names + data types
+summary(myTable)  # per-column summary stats
+```
+**Expected output:** a 4×2 table; `dim` → `4 2`; `str`/`summary` describe types and distributions.
+
+- **Build / rename** ➔ `data.frame(v1, v2, …)`; `names(df) <- c(...)`.
+- **Audit** ➔ `nrow` / `ncol` / `dim`; `str(df)` (types); `summary(df)`; `head(df)` / `tail(df)`; stats `min`/`mean`/`sd` on `df$col`.
+- **Extract** ➔ column `df["Ages"]` or `df$Ages`; multiple `df[c("Names","Ages")]`; by index `df[2]`; row `df[1, ]`; cell `df[1,2]`; block `df[3:4, 2:3]`.
+- **Sort** ➔ `df[order(df$Ages), ]` (asc) / `order(df$Ages, decreasing=TRUE)`; multi-key `order(df$Ages, df$Heights)`.
+- **Combine** ➔ `merge(a, b, by="Names")` (join on key); `rbind(a, b)` (stack rows — same columns).
+- **Aggregate** ➔ `aggregate(mtcars, by=list(cyl, vs), FUN=mean)` (group → summary).
+
+## 🔀 Variations
+- **I/O** ➔ `getwd()` / `setwd("D:/Folder")`; `write.csv(df, "F.csv")`; `df <- read.csv("F.csv")`.
+- **Libraries & datasets** ➔ `install.packages("moments")` once, then `library(moments)`; `data()` lists built-ins, `data(mtcars)` loads one.
+
+## 🥋 Kata (write from blank)
+> [!QUESTION]- Kata 1: Load `mtcars`, show its first rows, and the mean of every numeric column grouped by `cyl` and `vs`.
+> > [!SUCCESS]- Reference solution
+> > ```r
+> > data(mtcars)
+> > head(mtcars)
+> > aggregate(mtcars, by = list(mtcars$cyl, mtcars$vs), FUN = mean)
+> > ```
+> > - **Key move:** `aggregate(..., by=list(...), FUN=mean)` is R's group-by-then-summarise.
+
+## ⚠️ Pitfalls
+- 💡 **Comma = row vs column** ➔ `df[2]` is column 2; `df[2, ]` is row 2; `df[2,3]` is one cell.
+- 💡 **`setwd` before read/write** ➔ relative filenames resolve against the working directory; set it (or pass a full path) first.
+- 💡 **`str` may show `Factor`** ➔ character columns can load as factors; check with `str()` before treating them as plain text.
