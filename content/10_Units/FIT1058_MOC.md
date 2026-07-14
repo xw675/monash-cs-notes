@@ -7,7 +7,12 @@ tags: [Monash/CS_DS, 2025/S2]
 
 > [!INFO] Map of Content
 > Index for the **Discrete Mathematics** strand of FIT1058 — sets, functions, relations, logic & proof, and sequences/series/growth. Each link below is a standalone atomic note. Start with [[Set (Mathematics)]] and follow the links.
-	
+
+## 📊 Assessment Map
+
+- **Assessment:** assignments + final exam *(⚠ splits unverified — fill from unit outline)*.
+- **Exam skills:** Domain D hand-execution — proofs (induction, contradiction), truth tables, Euclid/modular-exponentiation traces, counting and probability derivations.
+
 ## 📅 Knowledge Index
 
 ### Week 1 — Sets and Their Structure
@@ -176,6 +181,7 @@ tags: [Monash/CS_DS, 2025/S2]
 29. [[Tree]] (connected acyclic graph; minimal connected; $n-1$ edges; has a leaf; unique paths) → [[Forest]] (acyclic graph; disjoint trees; $n-k$ edges) → [[Spanning Tree]] (tree subgraph reaching all vertices; delete/add-edge methods) → [[Kruskal's Greedy Algorithm]] (cheapest cycle-free edge each step; minimum-cost spanning tree; greedy yet optimal) → [[Planar Graph]] (drawable with no crossings; faces, boundaries, sides) → [[Euler's Formula (Planar Graphs)]] ($n-m+f=2$; $m\le3n-6$, triangle-free $m\le2n-4$; $K_5$ and $K_{3,3}$ nonplanar).
 
 ## 🎯 Learning Outcomes
+
 After Week 1 you should be able to: specify sets three ways and compute cardinalities; use the number/string set families and interval notation; reason with $\subseteq/\subset$ and prove set equality by double inclusion; count subsets with the power set ($2^n$) and binomial coefficients (incl. Pascal's identity); and manipulate the set operations (complement, difference, union, intersection, symmetric difference, Cartesian product, partition) including De Morgan's laws.
 
 After Week 2 you should be able to: define a function by domain/codomain/rule and distinguish codomain from image; classify functions as injective/surjective/bijective and decide when an inverse exists; compose functions (and invert composites by socks-and-shoes); model a cryptosystem as keyed invertible functions; count functions, injections, and bijections; and work with binary/$n$-ary relations — their properties (reflexive/symmetric/antisymmetric/transitive), composition and closure, equivalence relations and the partition they induce, and the $2^{mn}$ relation count.

@@ -5,94 +5,88 @@ tags: [Monash/CS_DS, 2026/S1]
 ---
 # 📘 FIT1008: Introduction to Computer Science
 
-
 > [!INFO] Map of Content
 > Index for the **Algorithms & Algorithmic Complexity** lecture (FIT1008/2085). Each link below is a standalone atomic note. Start with [[Algorithm]] and follow the links.
 
+## 📊 Assessment Map
+
+- **Assessment:** pracs + mid-semester test + final exam *(⚠ splits unverified — fill from unit outline)*.
+- **Exam skills:** raw-code data structures (no magic methods), Best/Average/Worst complexity tables, hand-traces of sorts/hashing/trees.
+- **Mid-semester test** ➔ Weeks 1–5 (complexity → ADTs → linked structures + iterators); **exam** ➔ whole unit, weighted to Weeks 6–11 structures.
+
 ## 📅 Knowledge Index
 
-### Foundations
+### Week 1 — Algorithms and Complexity
 - [[Algorithm]]
 - [[Computational Problem]]
 - [[Algorithmic Complexity]] — backbone (incl. **Input Size** + **Running Time** + **Time Complexity** + **Cost of Elementary Operations** + **Best/Worst-Case** subsections)
-
-### Asymptotic Analysis
 - [[Big-O Notation]] — backbone (incl. **Asymptotic Analysis** + **Big-Omega/Theta** + **Properties** + **Complexity Classes** subsections)
 - [[Arithmetic Series]]
-
-### Worked Algorithms
 - [[Linear Search]]
 - [[Binary Search]]
-
-### Sorting
 - [[Sorting Problem]] — backbone (incl. **Bubble** + **Selection** + **Insertion** sorts + **Stability** + **Incrementality** subsections)
-
-### Algorithm Properties
 - [[Invariant]]
 
-### ADTs & Stacks
+### Week 2 — Intro to ADTs: Stack and Set ADT
 - [[Abstract Data Type (ADT)]]
 - [[Data Type]]
 - [[Data Structure]]
 - [[Array (Data Structure)]]
 - [[Abstract Base Class]]
-- [[Stack (ADT)]] — backbone (incl. **ArrayStack** + **LinkStack** subsections)
-
-### Sets
+- [[Stack (ADT)]] — backbone (incl. **ArrayStack** + **LinkStack** subsections; LinkStack lands Week 5)
 - [[Set (ADT)]] — backbone (incl. **ArraySet** + **BVSet** subsections)
 - [[Bit Vector]]
 
-### Queues
-- [[Queue (ADT)]] — backbone (incl. **LinearQueue** + **CircularQueue** + **LinkQueue** subsections)
-
-### Lists
-- [[List (ADT)]] — backbone (incl. **ArrayList** + **LinkList** + **LinkListIterator** subsections)
+### Week 3 — List ADT and Queue ADT
+- [[List (ADT)]] — backbone (incl. **ArrayList** + **LinkList** + **LinkListIterator** subsections; linked parts land Weeks 4–5)
 - [[Dynamic Array Resizing]]
 - [[List Slicing]]
 - [[List Comprehension]]
+- [[Queue (ADT)]] — backbone (incl. **LinearQueue** + **CircularQueue** + **LinkQueue** subsections; LinkQueue lands Week 5)
 
-### Sorted Lists
+### Week 4 — Sorted List ADT and Linked List
 - [[Sorted List (ADT)]] — backbone (incl. **SortedArrayList** subsection)
-- [[Binary Search]]
-
-### Linked Lists
+- [[Binary Search]] *(revisited: the SortedList search engine)*
 - [[Node]]
 - [[Linked Node Data Structure]]
-- [[List (ADT)]] → **LinkList** subsection
+- [[List (ADT)]] → **LinkList** subsection *(extended in Week 4)*
 
-### Iterators & Higher-Order Functions
+### Week 5 — Linked Stack, Linked Queue, and Iterator
+- [[Stack (ADT)]] → **LinkStack** subsection *(extended in Week 5)*
+- [[Queue (ADT)]] → **LinkQueue** subsection *(extended in Week 5)*
 - [[Iterable]]
 - [[Iterator]]
-- [[List (ADT)]] → **LinkListIterator** subsection
+- [[List (ADT)]] → **LinkListIterator** subsection *(extended in Week 5)*
 - [[Generator Expression]]
 - [[Higher-Order Function]]
 
-### Linked Stacks & Queues
-- [[Stack (ADT)]] → **LinkStack** subsection
-- [[Queue (ADT)]] → **LinkQueue** subsection
+*(Week 5.5 — mid-semester break; mid-sem test material = Weeks 1–5.)*
 
-### Hash Tables
-- [[Dictionary (ADT)]]
-- [[Hash Table]] — backbone (incl. **Hash Function** + **Collision Resolution** + **Open Addressing** + **Linear Probing** + **Load Factor** subsections)
-
-### Recursion
+### Week 6 — Recursion
 - [[Recursion]] — backbone (incl. **Notation** + **Accumulator** + **Auxiliary Function** + **vs Iteration** + **→Iteration via Stack** subsections)
 - [[Tower of Hanoi]]
 
-### Recursive Sorts (Divide & Conquer)
+### Week 7 — Recursive Sorts
 - [[Divide and Conquer]]
 - [[Merge Sort]]
 - [[Quick Sort]]
 
-### Priority Queues & Heaps
+### Week 8 — Binary Trees and BSTs
+- [[Tree]]
+- [[Binary Tree]] — backbone (incl. **Tree Traversal** + **Expression Tree** subsections)
+- [[Binary Search Tree (BST)]]
+
+### Week 9 — Priority Queues and Binary Heaps
 - [[Priority Queue (ADT)]]
 - [[Heap]] — backbone (incl. **Bottom-Up Construction** subsection)
 - [[Heapsort]]
 
-### Trees
-- [[Tree]]
-- [[Binary Tree]] — backbone (incl. **Tree Traversal** + **Expression Tree** subsections)
-- [[Binary Search Tree (BST)]]
+### Week 10 — Dictionary ADT, Hash Functions, and Hash Tables
+- [[Dictionary (ADT)]]
+- [[Hash Table]] — backbone: **Hash Function** subsections this week (polynomial/Horner, prime discipline)
+
+### Week 11 — Hash Tables and Collision Resolution
+- [[Hash Table]] → **Collision Resolution** + **Open Addressing** + **Linear Probing** + **Load Factor** subsections *(extended in Week 11 — one clustered note spans both weeks)*
 
 ## 🧭 Suggested Reading Order
 
@@ -120,6 +114,6 @@ tags: [Monash/CS_DS, 2026/S1]
 22. [[Heap]] (array-backed: root at 1, children $2k/2k{+}1$, parent $k/2$; `add` rises, `get_max` swaps-with-last then sinks, both $O(\log N)$) → [[Heap|Bottom-Up Heap Construction]] (heapify a whole array in $\Theta(N)$ by sinking internal nodes from $\lfloor N/2\rfloor$ down — the sum-of-heights $2^h{-}1{-}h$ proof — vs $O(N\log N)$ for $N$ inserts) → [[Heapsort]] (build then extract-max $N$ times: in-place, **guaranteed** $O(N\log N)$, unstable — [[Sorting Problem|Selection Sort]] with an $O(\log N)$ `find_max`, and [[Quick Sort]]'s worst-case fallback). Heap-vs-BST: the same keys give very different shapes — a heap only locates the max, a BST keeps full key order.
 23. [[Binary Tree|Expression Tree]] (a [[Binary Tree]] with operators as inner nodes and operands as leaves; **preorder→prefix**, **inorder→infix**, **postorder→postfix/RPN** — the three [[Binary Tree|traversals]] *are* the three notations) → [[Binary Search Tree (BST)]] (a binary tree with the ordering invariant left-key < node < right-key; `search`/`insert`/`delete` are $O(\text{depth})$ — $O(\log N)$ balanced, $O(N)$ unbalanced; recursive `insert` must **return and re-link** the node, delete uses the **in-order successor**, and an explicit-[[Stack (ADT)|stack]] iterator makes it iterable in preorder) — good for search *and* insert/delete, unlike a [[Sorted List (ADT)|sorted array]] or sorted [[List (ADT)|LinkList]], and ordered unlike a [[Hash Table]].
 
-## 🎯 Lecture Learning Outcomes
+## 🎯 Learning Outcomes
 
 After this lecture you should be able to: explain what an algorithm is and how its **time complexity** is analysed; define **Big-O** and apply its properties; combine Big-O terms; and recognise common **complexity classes** ($O(1)$, $O(\log n)$, $O(n)$, $O(n \log n)$, $O(n^2)$, $O(2^n)$).

@@ -8,11 +8,16 @@ tags: [Monash/CS_DS, 2026/S1]
 > [!INFO] Map of Content
 > Index for **FIT2099 Object-Oriented Design and Implementation** (Java). Domain B: every design note carries a Mermaid `classDiagram`; designs are judged on **Coupling / Cohesion / Extensibility**. Start with [[OOP Building Blocks (Class, Object, Field, Method)]].
 
-## 📅 Knowledge Index
+## 📊 Assessment Map
 
-### 🧰 Toolkit Cheatsheets (pinned — the exam-ready coding/notation surface)
+- **Assessment:** engine-based Java group project across milestones + individual work *(⚠ splits unverified — fill from unit outline)*.
+- **Assessed skills:** design rationale in Coupling/Cohesion/Extensibility terms, UML/Mermaid diagrams, SOLID application, smell → refactor.
+
+## 🧰 Toolkit Cheatsheets (pinned — pre-lab / pre-exam single re-reads)
 - [[Java Toolkit (Cheatsheet)]] — code a class from a blank editor: class anatomy, modifiers, types/`==`-vs-`equals`, collections, inheritance/polymorphism/interfaces/enums, exceptions/DbC/CQS, DI/defensive copying, Factory Method, and the smell→refactoring quick-map.
 - [[UML Toolkit (Cheatsheet)]] — draw from a blank page: class-diagram compartments/visibility/**relationship-arrow legend**/multiplicity/stereotypes, sequence-diagram lifelines/messages/activation/fragments, and the domain/activity/use-case/CRC modelling tools (Mermaid syntax throughout).
+
+## 📅 Knowledge Index
 
 ### Week 1 — Java & OO Fundamentals
 - [[Java Static Typing]] -> Parent Framework: [[Java Program Structure]]
@@ -115,6 +120,7 @@ tags: [Monash/CS_DS, 2026/S1]
 27. [[Software Design in the Lifecycle (FIT2099)]] — where design sits in the SDLC (Waterfall: requirements→analysis→design→implementation→verification→maintenance; what / what-mean / how), the messy overlap in practice, Lean just-in-time/just-enough design (decide as late as possible), when to do conscious design (inception/architectural, complex-or-risky, refactoring), and the goal of shared understanding in stakeholders' heads. Then [[Technical Debt (FIT2099)]] — quick-messy vs clean-slow, the burn-down gap, the Reckless/Prudent × Deliberate/Inadvertent quadrant, and repayment by refactoring to a *better* design. Then [[Design Process and Techniques (FIT2099)]] — design as a creative act, understanding the domain first, brainstorming/model storming, top-down vs bottom-up, and scenario-based design/use cases — refined with [[CRC Cards (FIT2099)]] (Class–Responsibility–Collaboration, scenario role-play, SRP-driven splitting, collaborations→associations).
 
 ## 🎯 Learning Outcomes
+
 1. Iteratively apply OO **design principles** to design small-to-medium systems using UML class diagrams and interaction diagrams.
 2. Describe the **quality** of OO designs — meeting requirements and the effective application of OO concepts/principles.
 3. Apply OO programming constructs — **abstraction, information hiding, inheritance, polymorphism** — to implement designs in **Java**.
