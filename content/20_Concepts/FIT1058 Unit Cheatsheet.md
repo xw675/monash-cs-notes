@@ -36,11 +36,13 @@ aliases: [FIT1058 Exam Crib, Discrete Maths Cheatsheet]
 - **Theorem/proof discipline** ➔ finite, sequentially readable, no circular dependence; no general proof-finding algorithm exists (Gödel, Church–Turing).
 
 ## 4️⃣ Sequences & Series
-$$\begin{aligned}
+$$
+\begin{aligned}
 \text{arithmetic: } S_n &= na + \tfrac{n(n-1)}{2}d, \qquad \textstyle\sum_{k=1}^{n-1} k = \tfrac{n(n-1)}{2} = \Theta(n^2)\\
 \text{geometric: } S_n &= a\,\tfrac{r^n - 1}{r - 1}\ (r \neq 1), \qquad \text{converges iff } |r| < 1\\
 \text{Fibonacci: } f_n &= \Theta(r_1^n),\ r_1 = \tfrac{1+\sqrt5}{2} \text{ (root of } r^2 = r + 1)
-\end{aligned}$$
+\end{aligned}
+$$
 - **Limit** ➔ $\forall\varepsilon\,\exists N\,\forall n{>}N: |a_n - \ell| < \varepsilon$ — quantifier ORDER is the content ("eventually", not "always").
 - **[[Big-O Notation]]** ➔ dominant term, drop constants; $\Theta = O \cap \Omega$; polynomial vs exponential = tractability frontier.
 
