@@ -1,17 +1,59 @@
-# Quartz v4
+# 🎓 CS × DS Knowledge Vault
 
-> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
+**Live site:** https://xw675.github.io/vault-site/
 
-Quartz is a set of tools that helps you publish your [digital garden](https://jzhao.xyz/posts/networked-thought) and notes as a website for free.
+Exam-ready study notes for a Monash University CS + Data Science, published from my Obsidian vault with [Quartz 4](https://quartz.jzhao.xyz).
 
-🔗 Read the documentation and get started: https://quartz.jzhao.xyz/
+Covers six first-year units — **FIT1058** (Foundations of Computing), **FIT1043** (Intro to Data Science), **FIT1047** (Computer Systems, Networks & Security), **FIT1008** (Fundamentals of Algorithms), **FIT2094** (Databases), **FIT2099** (Object Oriented Design) — as ~370 interlinked atomic notes with unit cheatsheets, toolkit cheatsheets, LaTeX math, Mermaid UML diagrams, full-text search, backlinks, and a graph view.
 
-[Join the Discord Community](https://discord.gg/cRFFHYye7t)
+## How it works
 
-## Sponsors
+```
+Obsidian vault (source of truth)
+        │  ./sync-content.sh
+        ▼
+content/            10_Units · 20_Concepts · 90_Attachments
+        │  git push → GitHub Actions
+        ▼
+quartz build        markdown → static HTML (wikilinks, KaTeX, Mermaid)
+        ▼
+GitHub Pages        static files, no server
+```
 
-<p align="center">
-  <a href="https://github.com/sponsors/jackyzha0">
-    <img src="https://cdn.jsdelivr.net/gh/jackyzha0/jackyzha0/sponsorkit/sponsors.svg" />
-  </a>
-</p>
+Notes are written and maintained in Obsidian. This repo holds a synced copy of the published folders plus the Quartz generator; nothing here is edited by hand except `content/index.md` (the homepage) and configuration.
+
+## Repo layout
+
+| Path | What it is |
+| --- | --- |
+| `content/` | Published notes (synced from vault — do not edit directly) |
+| `content/index.md` | Homepage (hand-written, survives sync) |
+| `quartz/` | Quartz static site generator (TypeScript) |
+| `quartz.config.ts` | Site title, theme, plugins |
+| `sync-content.sh` | Copies vault folders in + normalizes math fences |
+| `.github/workflows/deploy.yml` | Build + deploy on every push to `main` |
+
+## Publishing an update
+
+```bash
+./sync-content.sh    # pull latest notes from the vault
+git add -A && git commit -m "update notes" && git push
+```
+
+The GitHub Action rebuilds and redeploys automatically (~2 min).
+
+## Local preview
+
+```bash
+npm ci               # first time only
+npx quartz build --serve
+# → http://localhost:8080
+```
+
+## Local modifications to stock Quartz
+
+Two deviations from upstream Quartz v4.5.2, both required for this vault:
+
+1. **Math fence normalization** (`sync-content.sh`) — Obsidian accepts compact `$$\begin{aligned}` / `\end{aligned}$$` fences on shared lines; Quartz's stricter markdown parser (micromark) discards content after an opening `$$` and misses closers at line ends, which silently swallowed entire pages into one broken KaTeX block. The sync script splits multi-line display-math fences onto their own lines; single-line `$$x = 1$$` equations are left untouched.
+
+2. **Mermaid `<<annotation>>` fix** (`quartz/components/scripts/mermaid.inline.ts`) — upstream restores diagram source via `node.innerHTML`, so the browser parses `<<interface>>` as an HTML tag and mangles it to `<>`, breaking every class diagram with UML annotations. Patched to `node.textContent`, which preserves the source literally.
