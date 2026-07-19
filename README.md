@@ -1,6 +1,6 @@
 # 🎓 CS × DS Knowledge Vault
 
-**Live site:** https://xw675.github.io/vault-site/
+**Live site:** https://xw675.github.io/monash-cs-notes/
 
 Exam-ready study notes for a Monash University CS + Data Science, published from my Obsidian vault with [Quartz 4](https://quartz.jzhao.xyz).
 
