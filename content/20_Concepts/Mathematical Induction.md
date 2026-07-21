@@ -1,11 +1,11 @@
 ---
-unit: FIT1058
+unit: [FIT1058, FIT2014]
 parent: "[[Proof Techniques]]"
 tags: [Math/Proof, Math/Induction, Monash/CS_DS]
 ---
 # [[Mathematical Induction]]
 
-**Context:** [[FIT1058_MOC]] · proves $\forall n\in\mathbb N,\ S(n)$ via base case + step · a [[Proof Techniques|proof technique]] driven by [[Modus Ponens]] · powers loop/recursion analysis
+**Context:** [[FIT1058_MOC]], [[FIT2014_MOC]] · proves $\forall n\in\mathbb N,\ S(n)$ via base case + step · a [[Proof Techniques|proof technique]] driven by [[Modus Ponens]] · powers loop/recursion analysis
 
 > [!abstract] Quick Revision
 > - **🎯 Objective:** prove $\forall n\in\mathbb N,\ S(n)$ ➔ discharge basis $S(1)$ + step $S(k)\Rightarrow S(k+1)$.
@@ -27,6 +27,13 @@ tags: [Math/Proof, Math/Induction, Monash/CS_DS]
 - **Strong induction** ➔ assume $S(1),\dots,S(k)$ ➔ derive $S(k+1)$.
 - **Shifted basis** ➔ start at $n=0$ or $n_0$ ➔ proves $\forall n\ge n_0$.
 - **Assumption** ➔ domain well-ordered ($\mathbb N$); $S(n)$ a precise per-$n$ statement.
+
+### 4. Stating the Hypothesis Correctly (FIT2014)
+- **✅ Correct opening** ➔ "**Let $k\ge1$. Assume $S(k)$ is true.**" — announces $k$ as **arbitrary**, subject only to the stated condition.
+- **❌ "Assume for all $k$, $S(k)$"** ➔ assumes the very conclusion (circular).
+- **❌ "Assume for some $k$, $S(k)$"** ➔ assumes only what the **base case** already gives.
+- **Test the step at its smallest $k$** ➔ a step valid "for large $n$" but failing at the first link proves nothing — the classic faulty inductions are catalogued in [[Proof Critique (Good, Bad and Ugly Proofs)]].
+- **Worked application** ➔ the extended De Morgan law $\neg(P_1\vee\cdots\vee P_n)=\neg P_1\wedge\cdots\wedge\neg P_n$ is proved by induction on $n$: basis $\neg P_1=\neg P_1$; step regroups $(P_1\vee\cdots\vee P_k)\vee P_{k+1}$, applies two-variable De Morgan, then the inductive hypothesis.
 
 **Key identities:**
 

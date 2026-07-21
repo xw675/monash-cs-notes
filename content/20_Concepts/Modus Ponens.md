@@ -1,11 +1,11 @@
 ---
-unit: FIT1058
+unit: [FIT1058, FIT2014]
 parent: "[[Logical Implication]]"
 tags: [Math/Logic, Math/Proof, Monash/CS_DS]
 ---
 # [[Modus Ponens]]
 
-**Context:** [[FIT1058_MOC]] · the core rule of inference · turns $P$ and $P\Rightarrow Q$ into $Q$ · justifies each "logical consequence" step of a [[Theorem and Proof|proof]]
+**Context:** [[FIT1058_MOC]], [[FIT2014_MOC]] · the core rule of inference · turns $P$ and $P\Rightarrow Q$ into $Q$ · justifies each "logical consequence" step of a [[Theorem and Proof|proof]]
 
 > [!abstract] Quick Revision
 > - **🎯 Objective:** from $P$ and $P\Rightarrow Q$, deduce $Q$ ➔ the engine of every "logical consequence" proof step.

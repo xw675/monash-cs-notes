@@ -1,11 +1,12 @@
 ---
-unit: FIT1058
+unit: [FIT1058, FIT2014]
 parent: "[[Binary Relation]]"
-tags: [Math/Logic, Math/Discrete, Monash/CS_DS]
+tags: [Math/Logic, Math/Discrete, Math/Theory, Monash/CS_DS]
+aliases: [predicate, free variable, bound variable, arity, k-ary, truth-valued function, domain]
 ---
 # [[Predicate]]
 
-**Context:** [[FIT1058_MOC]] · a [[Binary Relation|relation]] used in a logical context · a truth-valued function of its arguments · combined by [[Logical Connectives]] and bound by [[Quantifiers (Existential and Universal)|quantifiers]]
+**Context:** [[FIT1058_MOC]], [[FIT2014_MOC]] · a [[Binary Relation|relation]] used in a logical context · a truth-valued function of its arguments · combined by [[Logical Connectives]] and bound by [[Quantifiers (Existential and Universal)|quantifiers]]
 
 > [!abstract] Quick Revision
 > - **🎯 Objective:** a truth-valued function of its arguments ➔ extends propositional logic to assertions *about objects*.
@@ -26,6 +27,17 @@ tags: [Math/Logic, Math/Discrete, Monash/CS_DS]
 ### 3. Equality Is Free
 - **Built-in** ➔ $=$ usable over **any** domain without declaration.
 - **Why** ➔ you cannot reason about a class without telling when two objects are the same ➔ the *only* default predicate.
+
+### 4. Free vs Bound Variables (FIT2014)
+- **Free variable** ➔ no value given yet, so the statement has **no truth value** ("$W$ is negative", "$Y=Z$"); each assignment of values creates a **different specific** [[Proposition and Truth Value|proposition]].
+- **Bound variable** ➔ a [[Quantifiers (Existential and Universal)|quantifier]] binds it, turning the open statement into a **single proposition about the whole domain**; you can no longer substitute specific values.
+- **Domain matters** ➔ $\exists W\in\mathbb{N}:W<0$ is **False**, while $\exists W\in\mathbb{Z}:W<0$ is **True** — the same predicate flips truth value with the domain.
+- **Quantify variables only** ➔ $\exists 5$ or $\exists\text{Annie}$ is meaningless; quantifiers apply to variables, not constants.
+
+### 5. Predicates vs Functions
+- **Predicate** ➔ a **truth-valued** function: codomain is $\{\text{True},\text{False}\}$; $k$-ary for $k$ arguments (**unary = property**, **$\ge 2$ = relation**).
+- **Function** ➔ values need **not** be truth values, e.g. $\sqrt{X}$ (nonnegative numbers $\to$ numbers), $\mathrm{motherOf}(X)$ (people $\to$ people), $X+Y$.
+- **Constant** ➔ a function with **no arguments** (e.g. $5$, Annie); a function's arguments may be constants, variables, or other functions.
 
 **Key identities:**
 

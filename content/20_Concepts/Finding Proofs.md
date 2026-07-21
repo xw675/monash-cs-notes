@@ -1,11 +1,11 @@
 ---
-unit: FIT1058
+unit: [FIT1058, FIT2014]
 parent: "[[Theorem and Proof]]"
 tags: [Math/Proof, Math/Logic, Monash/CS_DS]
 ---
 # [[Finding Proofs]]
 
-**Context:** [[FIT1058_MOC]] · how to *discover* a proof · no general algorithm exists · structural blueprints for common goals
+**Context:** [[FIT1058_MOC]], [[FIT2014_MOC]] · how to *discover* a proof · no general algorithm exists · structural blueprints for common goals
 
 > [!abstract] Quick Revision
 > - **🎯 Objective:** discover and structure a proof by matching a blueprint to the goal's shape ➔ no mechanical algorithm exists.

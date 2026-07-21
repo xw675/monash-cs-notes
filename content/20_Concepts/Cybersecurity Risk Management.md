@@ -14,7 +14,10 @@ aliases: [risk management, security controls, NIST RMF, risk management framewor
 
 ## 📝 Managing risk
 - **Core premise** ➔ you cannot eliminate risk, only **reduce it to an acceptable level** with appropriate controls (accept the **residual risk**).
-- **Control families** (NIST RMF) ➔ **Risk Assessment**; Certification/Accreditation & Security Assessments; System & Services Acquisition; **Security Planning**; **Configuration Management**; System & Communications Protection; **Personnel Security**; **Awareness & Training**; Physical & Environmental Protection; Media Protection; **Contingency Planning**; System & Information Integrity; **Incident Response**; **Identification & Authentication**; **Access Control**; **Accountability & Audit**.
+- **Control families (NIST RMF)** ➔ 16 families in three groups:
+	- **Technical** ➔ Access Control · Identification & Authentication · System & Communications Protection · System & Information Integrity · Accountability & Audit.
+	- **Operational / people** ➔ Awareness & Training · Personnel Security · Physical & Environmental Protection · Media Protection · Configuration Management · Contingency Planning · Incident Response.
+	- **Management** ➔ Risk Assessment · Security Planning · Certification/Accreditation & Security Assessments · System & Services Acquisition.
 - **Framework** ➔ the **NIST Risk Management Framework (RMF)** structures how controls are selected, implemented, assessed, and monitored.
 
 ## 👥 Roles in cybersecurity

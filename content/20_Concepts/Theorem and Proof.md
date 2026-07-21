@@ -1,11 +1,11 @@
 ---
-unit: FIT1058
+unit: [FIT1058, FIT2014]
 parent: "[[Proof Techniques]]"
 tags: [Math/Logic, Math/Proof, Monash/CS_DS]
 ---
 # [[Theorem and Proof]]
 
-**Context:** [[FIT1058_MOC]] · a theorem is a proven statement, a proof its rigorous argument · each step is a definition/assumption/[[Modus Ponens|consequence]] · realised by the [[Proof Techniques]]
+**Context:** [[FIT1058_MOC]], [[FIT2014_MOC]] · a theorem is a proven statement, a proof its rigorous argument · each step is a definition/assumption/[[Modus Ponens|consequence]] · realised by the [[Proof Techniques]]
 
 > [!abstract] Quick Revision
 > - **🎯 Objective:** a theorem is a proven statement; a proof is its finite, rigorous step sequence ➔ ends in exactly the claim.

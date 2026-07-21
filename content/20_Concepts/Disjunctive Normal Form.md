@@ -1,16 +1,25 @@
 ---
-unit: FIT1058
+unit: [FIT1058, FIT2014]
 parent: "[[Boolean Algebra Laws]]"
-tags: [Math/Logic, Math/Discrete, Monash/CS_DS]
+tags: [Math/Logic, Math/Discrete, Math/Theory, Monash/CS_DS]
+aliases: [DNF, disjunctive normal form, literal]
 ---
 # [[Disjunctive Normal Form]]
 
-**Context:** [[FIT1058_MOC]] · an OR-of-ANDs standard form · read directly from a truth table · dual to [[Conjunctive Normal Form]]
+**Context:** [[FIT1058_MOC]], [[FIT2014_MOC]] · an OR-of-ANDs standard form · read directly from a truth table · dual to [[Conjunctive Normal Form]]
 
 > [!abstract] Quick Revision
 > - **🎯 Objective:** a disjunction (OR) of parts, each a conjunction (AND) of literals ➔ readable row-by-row from a truth table.
 > - **📦 Core Components:** literal (plain $X$ / negated $\neg X$) ➔ one implicant per True row ➔ OR them.
-> - **⚡ Critical Bottleneck:** up to $2^k$ parts (exponential blow-up); but satisfiability is trivial.
+> - **⚡ Critical Bottleneck:** up to $2^k$ parts (exponential blow-up); but satisfiability is trivial. **In FIT2014, DNF is mainly a stepping stone to [[Conjunctive Normal Form|CNF]].**
+
+## 🔁 The two-table routine (FIT2014)
+- **DNF** ➔ take the **True** rows; one conjunction per row; **OR** them.
+- **CNF** ➔ take the **False** rows; write their DNF; then **negate the whole thing** and apply De Morgan.
+- **Worked contrast — "at least one of $J,K,M$"** ➔ 7 True rows ⟹ DNF has **7 terms**; the single False row $\neg J\wedge\neg K\wedge\neg M$ negates to the **1 clause** $(J\vee K\vee M)$:
+$$\neg(\neg J\wedge\neg K\wedge\neg M)\;=\;(\neg\neg J\vee\neg\neg K\vee\neg\neg M)\;=\;(J\vee K\vee M)$$
+- **"At least two of $J,K,M$"** ➔ the 4 False rows negate and simplify to $(J\vee K)\wedge(J\vee M)\wedge(K\vee M)$.
+- **Degenerate case** ➔ for "**all three**", the single True row gives $J\wedge K\wedge M$, which is simultaneously **DNF and CNF** (each conjunct is a one-literal clause).
 
 ## 📝 Core
 ### 1. The Form (OR-of-ANDs)

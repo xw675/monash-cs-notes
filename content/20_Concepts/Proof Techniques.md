@@ -1,11 +1,13 @@
 ---
-unit: FIT1058
+unit: [FIT1058, FIT2014]
 parent: "[[Theorem and Proof]]"
-tags: [Math/Proof, Math/Logic, Monash/CS_DS]
+tags: [Math/Proof, Math/Logic, Math/Theory, Monash/CS_DS]
+aliases: [proof by construction, proof by cases, proof by contradiction, exhaustion, reductio ad absurdum, subset proof, set equality]
 ---
 # [[Proof Techniques]]
 
-**Context:** [[FIT1058_MOC]] · the named patterns a [[Theorem and Proof|proof]] follows · matched to the claim's [[Quantifiers (Existential and Universal)|quantifier]] · [[Mathematical Induction]] is the fifth
+**Context:** [[FIT1058_MOC]], [[FIT2014_MOC]] · the named patterns a [[Theorem and Proof|proof]] follows · matched to the claim's [[Quantifiers (Existential and Universal)|quantifier]] · [[Mathematical Induction]] is the fifth
+**Judging quality:** [[Proof Critique (Good, Bad and Ugly Proofs)]] — valid vs invalid vs merely graceless.
 
 > [!abstract] Quick Revision
 > - **🎯 Objective:** pick the argument pattern matching the claim's logical shape ➔ construction / cases / contradiction / symbolic manipulation (+ induction).
@@ -28,7 +30,13 @@ tags: [Math/Proof, Math/Logic, Monash/CS_DS]
 
 ### 4. Contradiction (*Reductio*)
 - **Method** ➔ assume the **negation**, derive an absurdity ($0=1$), conclude the assumption false.
-- **Canonical** ➔ Euclid's infinitude of primes; interesting-number (Well-Ordering).
+- **Canonical** ➔ Euclid's infinitude of primes; interesting-number (Well-Ordering); **$\sqrt{2}$ is irrational** (assume $\sqrt2=\tfrac{m}{n}$ in lowest terms $\Rightarrow 2n^{2}=m^{2}\Rightarrow m,n$ both even $\Rightarrow$ contradiction); **Cantor's diagonalisation** ([[Countability and Cantor Diagonalisation]]).
+- **⚠ Don't over-apply** ➔ if a **direct** proof exists, wrapping it in contradiction makes it *ugly*, not stronger ([[Proof Critique (Good, Bad and Ugly Proofs)]]).
+
+### 5. Proving Equalities (the two-sided strategies)
+- **Set equality** $A=B$ ➔ prove **$A\subseteq B$** and **$A\supseteq B$** separately.
+- **Subset relation** $A\subseteq B$ ➔ take a **general** member of $A$, **name** it, use $A$'s definition, follow the consequences, aim at $B$'s definition. *(the blueprint used for $\text{DOUBLEWORD}\subseteq\text{EVEN-EVEN}$ in [[Formal Languages (Alphabets, Words, Languages)]])*
+- **Numerical equality** $A=B$ ➔ transform $A$ into $B$ algebraically if you can; if not, prove **$A\le B$** and **$A\ge B$**.
 
 ---
 ## ⚖️ Core Decision Matrix
