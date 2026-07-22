@@ -18,14 +18,14 @@ tags: [Monash/CS_DS, Stats/Modelling, DS/R]
 ### 🧰 Toolkit Cheatsheets (pre-lab / pre-exam single re-reads)
 - [[R Toolkit (Cheatsheet)]] -> dual-unit (FIT1043 + FIT2086); FIT2086 adds the simulation / distribution (`d`/`p`/`q`/`r`) block
 
-### Week 0 — Self-Study / Revision *(Lecture 0 + R0001–R0007)*
+### Week 0 — Self-Study / Revision
 - [[Measures of Centrality]] -> Parent Framework: [[Statistical Modelling and Inference]] *(dual-unit — statistic $s(\mathbf{y})$ framing)*
 - [[Measures of Spread and Boxplots]] -> Parent Framework: [[Statistical Modelling and Inference]] *(dual-unit — variance $v(\mathbf{y})$, percentile $Q(\mathbf{y},p)$)*
 - [[Association Between Variables]] -> Parent Framework: [[Statistical Modelling and Inference]] *(dual-unit — Pearson $R(\mathbf{x},\mathbf{y})$, correlation ≠ causation)*
 - [[Mathematics for Modelling (Log, Exp, Calculus)]] -> Parent Framework: [[Statistical Modelling and Inference]] *(log/exp/derivative/partial — the MLE toolkit)*
 - *(R revision R0001–R0005/R0007 is covered dual-unit by [[R Basics (Syntax, Types, Control Flow)]], [[R Vectors]], [[R Data Frames and IO]], [[R Visualisation (base graphics)]] + the cheatsheet.)*
 
-### Week 1 — Modelling, Probability & Random Variables *(Lecture 1 + R0006)*
+### Week 1 — Modelling, Probability & Random Variables 
 - [[Statistical Modelling and Inference]] -> Parent Framework: [[FIT2086_MOC]] *(hub: population/sample/model/inference)*
 - [[Random Variables and Probability Distributions (FIT2086)]] -> Parent Framework: [[Statistical Modelling and Inference]] *(joint/marginal/conditional/iid; continuous pdf/CDF/quantile)*
 - [[R Simulation and Random Sampling]] -> Parent Framework: [[R for Data Science]] *( `set.seed`, `sample`, `d`/`p`/`q`/`r`)*
