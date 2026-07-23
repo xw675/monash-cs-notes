@@ -22,7 +22,7 @@ Exam-ready notes for a Monash CS + Data Science double degree. Start from a unit
 
 - [[FIT2014_MOC|📘 FIT2014 — Theory of Computation]]
 - [[FIT2086_MOC|📘 FIT2086 — Modelling for Data Analysis]]
-- FIT2004
+- [[FIT2004_MOC|📘 FIT2004 — Algorithms and Data Structures]]
 - FIT3003
 
 ## 🧰 Toolkit Cheatsheets
