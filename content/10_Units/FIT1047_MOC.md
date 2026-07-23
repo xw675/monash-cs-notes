@@ -6,7 +6,7 @@ tags: [Monash/CS_DS, CS/Systems]
 # 📘 FIT1047: Introduction to Computer Systems, Networks and Security
 
 > [!INFO] Map of Content
-> Index for **FIT1047 (Malaysia campus)**. Hand-execution unit: number conversions, logic circuits, MARIE assembly traces are the assessed skills — every applied note carries a write-from-blank element. No code toolkit ⟹ no Tier 3C cheatsheet; the conversion procedures ARE the toolkit.
+> Index for **FIT1047 (Malaysia campus)**. Hand-execution unit: number conversions, logic circuits, MARIE assembly traces are the assessed skills — every applied note carries a write-from-blank element.
 
 ## 📊 Assessment Map (from Week 1 workshop — verify remainder against unit guide)
 - **Assignment 1 (15%)** ➔ Foundations: Binary Number System (W1) + Boolean Logic Circuit (W2).
@@ -14,9 +14,9 @@ tags: [Monash/CS_DS, CS/Systems]
 - **Remaining weight** ➔ networks + security half (LO5–7) and final assessment *(⚠ split not stated in W1 deck)*.
 - **LO1 (W1–2):** number representations + Boolean algebra → logic circuits · **LO2:** hardware/software architectures · **LO3:** MARIE assembly · **LO4:** OS functions.
 
-## 🧰 Unit Cheatsheet (pinned — SWOTVAC single re-read)
+## 🧰 Unit Cheatsheet
 
-- 📌 [[FIT1047 Unit Cheatsheet]] — whole-unit exam crib — systems → networks → security in one re-read
+- 📌 [[FIT1047 Unit Cheatsheet]] —systems → networks → security in one re-read
 
 ## 📅 Knowledge Index
 

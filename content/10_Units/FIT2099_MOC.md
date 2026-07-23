@@ -6,15 +6,15 @@ tags: [Monash/CS_DS, 2026/S1]
 # 📘 FIT2099: Object-Oriented Design and Implementation
 
 > [!INFO] Map of Content
-> Index for **FIT2099 Object-Oriented Design and Implementation** (Java). Domain B: every design note carries a Mermaid `classDiagram`; designs are judged on **Coupling / Cohesion / Extensibility**. Start with [[OOP Building Blocks (Class, Object, Field, Method)]].
+> Index for **FIT2099 Object-Oriented Design and Implementation** (Java). Every design note carries a Mermaid `classDiagram`; designs are judged on **Coupling / Cohesion / Extensibility**. Start with [[OOP Building Blocks (Class, Object, Field, Method)]].
 
 ## 📊 Assessment Map
 
-- **Assessment:** engine-based Java group project across milestones + individual work *(⚠ splits unverified — fill from unit outline)*.
+- **Assessment:** engine-based Java group project across milestones + individual work.
 - **Assessed skills:** design rationale in Coupling/Cohesion/Extensibility terms, UML/Mermaid diagrams, SOLID application, smell → refactor.
 
-## 🧰 Toolkit Cheatsheets (pinned — pre-lab / pre-exam single re-reads)
-- 📌 [[FIT2099 Unit Cheatsheet]] — whole-unit exam crib — principles, smells→refactors, contracts, UML rules
+## 🧰 Toolkit Cheatsheets
+- 📌 [[FIT2099 Unit Cheatsheet]] — principles, smells→refactors, contracts, UML rules
 - [[Java Toolkit (Cheatsheet)]] — code a class from a blank editor: class anatomy, modifiers, types/`==`-vs-`equals`, collections, inheritance/polymorphism/interfaces/enums, exceptions/DbC/CQS, DI/defensive copying, Factory Method, and the smell→refactoring quick-map.
 - [[UML Toolkit (Cheatsheet)]] — draw from a blank page: class-diagram compartments/visibility/**relationship-arrow legend**/multiplicity/stereotypes, sequence-diagram lifelines/messages/activation/fragments, and the domain/activity/use-case/CRC modelling tools (Mermaid syntax throughout).
 

@@ -10,12 +10,12 @@ tags: [Monash/CS_DS, 2025/S2]
 
 ## 📊 Assessment Map
 
-- **Assessment:** assignments + final exam *(⚠ splits unverified — fill from unit outline)*.
-- **Exam skills:** Domain D hand-execution — proofs (induction, contradiction), truth tables, Euclid/modular-exponentiation traces, counting and probability derivations.
+- **Assessment:** assignments + final exam.
+- **Exam skills:** proofs (induction, contradiction), truth tables, Euclid/modular-exponentiation traces, counting and probability derivations.
 
-## 🧰 Unit Cheatsheet (pinned — SWOTVAC single re-read)
+## 🧰 Unit Cheatsheet
 
-- 📌 [[FIT1058 Unit Cheatsheet]] — whole-unit exam crib — logic → proofs → counting → probability → number theory → graphs
+- 📌 [[FIT1058 Unit Cheatsheet]] — logic → proofs → counting → probability → number theory → graphs
 
 ## 📅 Knowledge Index
 

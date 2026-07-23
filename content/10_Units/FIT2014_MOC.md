@@ -6,14 +6,14 @@ tags: [Monash/CS_DS, Math/Theory, CS/Computation]
 # 📘 FIT2014: Theory of Computation
 
 > [!INFO] Map of Content
-> Index for **FIT2014 (Malaysia campus)**. **Domain D — strictly zero code**: formal logic, sets and proof, all LaTeX. Arc: languages → logic/CNF → automata → grammars → Turing machines → NP-completeness. Conventions: $\Sigma$ alphabets, $\varepsilon$ empty word, **CNF is the working form**; W1–2 logic notes are shared dual-unit with [[FIT1058_MOC]].
+> Index for **FIT2014 (Malaysia campus)**. Arc: languages → logic/CNF → automata → grammars → Turing machines → NP-completeness. Conventions: $\Sigma$ alphabets, $\varepsilon$ empty word, **CNF is the working form**; W1–2 logic notes are shared dual-unit with [[FIT1058_MOC]].
 
 ## 📊 Assessment Map
 - **Practical Preparation (5%)** ➔ ongoing weekly prac work — part of the in-semester threshold hurdle.
 - **Assignment 1 (10%)** ➔ Regular Expressions + Finite Automata — the W2 logic/CNF + coming automata material.
 - **Mid-semester Test (15%)** ➔ everything to ~W6 ⟹ languages, logic, encoding, regex↔automata must be solid EARLY.
 - **Assignment 2 (20%)** ➔ Lexical Analysis, Parsing, Computability.
-- **Final exam (3h10, 50%)** ➔ whole unit; **the exam is a hurdle AND the in-semester tasks form a threshold hurdle** — no coasting on either half.
+- **Final exam (3h10, 50%)** ➔ whole unit; **the exam is a hurdle AND the in-semester tasks form a threshold hurdle**.
 - **Reference text** ➔ Sipser (pp. 13–14 strings/languages; §0.3 pp. 17–20 definitions/theorems/proofs; pp. 14–15 and p. 302 for normal forms).
 - **LO thread so far** ➔ define and manipulate formal languages; read/write propositional and predicate logic; **encode real problems in CNF** (the recurring assessable skill).
 

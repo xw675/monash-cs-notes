@@ -6,10 +6,10 @@ tags: [Monash/CS_DS, CS/Algorithms, CS/Complexity]
 # 📘 FIT2004: Algorithms and Data Structures
 
 > [!INFO] Map of Content
-> Index for **FIT2004 Algorithms and Data Structures** (Y2S1) — rigorous algorithmics building on [[FIT1008_MOC]]. **Domain A**: raw Python/pseudocode with **no magic library methods**, and a **mandatory Best/Average/Worst complexity table** on every algorithm. Much of the foundational material (Big-O, recursion, divide-and-conquer, merge sort) is **shared dual-unit** with FIT1008/FIT1058 and deepened here with **correctness proofs** and **recurrence analysis** rather than duplicated.
+> Index for **FIT2004 Algorithms and Data Structures** (Y2S1) — rigorous algorithmics building on [[FIT1008_MOC]]. Much of the foundational material (Big-O, recursion, divide-and-conquer, merge sort) is **shared dual-unit** with FIT1008/FIT1058 and deepened here with **correctness proofs** and **recurrence analysis** rather than duplicated.
 
 ## 📊 Assessment Map
-- **Learning Project Portfolio (100%)** ➔ continuous production — the assignments *are* the unit (FIT1045-style; revision = keeping the portfolio moving).
+- **Learning Project Portfolio (100%)** ➔ continuous production — the assignments *are* the unit.
 - **In-class tests (0%) — competency hurdle** ➔ must meet the standard to pass; **one supplementary attempt**. These are the **hand-execution checkpoints** (trace tables, complexity derivations).
 - **No exam** ➔ portfolio-driven; drill the in-class competency tests as the hand-skill gate.
 - **LO thread so far** ➔ analyse running time via recurrences; design divide-and-conquer algorithms; quote tight Big-O with mandatory complexity tables.

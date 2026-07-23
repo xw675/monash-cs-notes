@@ -13,8 +13,8 @@ tags: [Monash/CS_DS, 2026/S1]
 - **Written Assignment (70%)** ➔ THE unit: design (ER → logical → normalised) + executable Oracle SQL; fed by Weeks 2–10 and [[Oracle SQL Toolkit (Cheatsheet)]].
 - **Test (30%)** ➔ theory: relational model, relational algebra, normalisation reasoning. No exam.
 
-## 🧰 Toolkit Cheatsheets (pinned — pre-lab / pre-exam single re-reads)
-- 📌 [[FIT2094 Unit Cheatsheet]] — whole-unit exam crib — design pipeline, normalisation, SQL decision rules, transactions, NoSQL
+## 🧰 Toolkit Cheatsheets
+- 📌 [[FIT2094 Unit Cheatsheet]] — design pipeline, normalisation, SQL decision rules, transactions, NoSQL
 - [[Oracle SQL Toolkit (Cheatsheet)]] -> integrates Topics 8–9: anatomy, predicates, functions, joins, subqueries + integration katas
 
 ## 📅 Knowledge Index

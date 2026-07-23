@@ -6,7 +6,7 @@ tags: [Monash/CS_DS, Stats/Modelling, DS/R]
 # 📘 FIT2086: Modelling for Data Analysis
 
 > [!INFO] Map of Content
-> Index for **FIT2086 Modelling for Data Analysis** (Schmidt/Wong) — the **statistics spine** of the DS degree. A **split-domain** unit: theory follows **Domain D** rigour (derivations in `$$\begin{aligned}$$`, declared distributions, zero code), while applied weeks are **R-heavy** (Tier 3 pattern notes + the pinned R cheatsheet). Much of Week 0–1 is **revision** shared dual-unit with [[FIT1058_MOC]] (probability) and [[FIT1043_MOC]] (descriptive statistics, R) rather than duplicated.
+> Index for **FIT2086 Modelling for Data Analysis** — the **statistics spine** of the DS degree. Much of Week 0–1 is **revision** shared dual-unit with [[FIT1058_MOC]] (probability) and [[FIT1043_MOC]] (descriptive statistics, R) rather than duplicated.
 
 ## 📊 Assessment Map
 - **Assignment 1 (10%)** · **Assignment 2 (20%)** · **Assignment 3 (20%)** ➔ the three written assignments carry the whole in-semester half; **all involve implementing models in R (LO5)**, so R fluency is assessed continuously.
@@ -15,7 +15,7 @@ tags: [Monash/CS_DS, Stats/Modelling, DS/R]
 
 ## 📅 Knowledge Index
 
-### 🧰 Toolkit Cheatsheets (pre-lab / pre-exam single re-reads)
+### 🧰 Toolkit Cheatsheets
 - [[R Toolkit (Cheatsheet)]] -> dual-unit (FIT1043 + FIT2086); FIT2086 adds the simulation / distribution (`d`/`p`/`q`/`r`) block
 
 ### Week 0 — Self-Study / Revision
